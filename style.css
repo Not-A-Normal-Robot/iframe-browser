@@ -1,0 +1,52 @@
+body {
+    position: absolute;
+    width: 100%;
+    width: 100vw;
+    width: 100dvw;
+    height: 100%;
+    height: 100vh;
+    height: 100dvh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    padding-bottom: 0;
+    border-bottom: 1px solid currentColor;
+}
+
+header>.row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+header button {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+header svg {
+    width: 100%;
+    height: 100%;
+}
+
+header input[type="url"] {
+    flex-grow: 1;
+}
+
+iframe {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+progress {
+    height: 1rem;
+}
