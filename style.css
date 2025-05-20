@@ -1,5 +1,17 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark light;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color-scheme: light dark;
+    }
+}
+
 body {
-    position: absolute;
+    position: fixed;
     width: 100%;
     width: 100vw;
     width: 100dvw;

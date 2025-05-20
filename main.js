@@ -1,9 +1,9 @@
-function i(e){debugger;if(Error){let t=new Error(e),r=window??globalThis;if(r&&"console"in r&&"error"in r.console){let l=console.error;l("panicked: ",e),l("stack trace: ",t.stack),l("error object: ",t)}if(r&&"alert"in r)r.alert(`panicked: ${e}
+function c(e){debugger;if(Error){let n=new Error(e),t=window??globalThis;if(t&&"console"in t&&"error"in t.console){let s=console.error;s("panicked: ",e),s("stack trace: ",n.stack),s("error object: ",n)}if(t&&"alert"in t)t.alert(`panicked: ${e}
 
 stack trace:
-${t.stack}
+${n.stack}
 
-see console for details`)}throw e}function d(e,t=void 0){if(!e)i(t?`assertion failed: ${t}`:"assertion failed")}function n(e){return d(e!==null,"null value given to assertNonNull"),e}var f=n(document.getElementById("btn-back")),E=n(document.getElementById("btn-next")),u=n(document.getElementById("btn-refresh")),c=n(document.getElementById("url-field")),m=n(document.getElementById("btn-go")),a=n(document.getElementById("iframe")),o=n(document.getElementById("progress"));function s(e){o.removeAttribute("value"),o.removeAttribute("max"),o.textContent="Loading...",a.src=e}u.addEventListener("click",()=>{let e=a.src;s(""),s(e)});c.addEventListener("keypress",(e)=>{if(e.code=="Enter")s(c.value)});m.addEventListener("click",()=>{s(c.value)});a.addEventListener("load",()=>{o.value=1,o.max=1});
+see console for details`)}throw e}function d(e,n=void 0){if(!e)c(n?`assertion failed: ${n}`:"assertion failed")}function o(e){return d(e!==null,"null value given to assertNonNull"),e}var u=o(document.getElementById("btn-refresh")),l=o(document.getElementById("url-field")),f=o(document.getElementById("btn-go")),i=o(document.getElementById("iframe")),r=o(document.getElementById("progress"));function a(e){r.removeAttribute("value"),r.removeAttribute("max"),r.textContent="Loading...",i.src=e}u.addEventListener("click",()=>{a(i.src)});l.addEventListener("keypress",(e)=>{if(e.code=="Enter")a(l.value)});f.addEventListener("click",()=>{a(l.value)});i.addEventListener("load",()=>{r.value=1,r.max=1});
 
-//# debugId=8CE3DA7C7168487464756E2164756E21
+//# debugId=D9FB2A8DD6B2F25164756E2164756E21
 //# sourceMappingURL=main.js.map

@@ -42,8 +42,6 @@ function assertNonNull<T>(x: T | null): T
     return x;
 }
 
-const btn_back = assertNonNull(document.getElementById("btn-back")) as HTMLButtonElement;
-const btn_next = assertNonNull(document.getElementById("btn-next")) as HTMLButtonElement;
 const btn_refresh = assertNonNull(document.getElementById("btn-refresh")) as HTMLButtonElement;
 const url_field = assertNonNull(document.getElementById("url-field")) as HTMLInputElement;
 const btn_go = assertNonNull(document.getElementById("btn-go")) as HTMLButtonElement;
@@ -60,9 +58,7 @@ function go(url: string)
 
 btn_refresh.addEventListener('click', () =>
 {
-    const url = iframe.src;
-    go("");
-    go(url);
+    go(iframe.src);
 });
 url_field.addEventListener('keypress', (ev) =>
 {
